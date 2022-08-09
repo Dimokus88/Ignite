@@ -5,7 +5,7 @@ services:
   app:
     image: ubuntu:latest
     env:
-     - "my_root_password=" # пароль root для подключения по ssh
+     - "my_root_password=" #Root password for ssh connection.Пароль root для подключения по ssh.
      - "ignite=" #Ignite version. Версия ignite
      - "YOUR_CHAIN_NAME="#Blockchain name.Имя блокчейна.
     
