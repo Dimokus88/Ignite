@@ -8,12 +8,12 @@ services:
      - "my_root_password=" #Root password for ssh connection.Пароль root для подключения по ssh.
      - "ignite=v0.23.0" #Ignite version. Версия ignite
      - "YOUR_CHAIN_NAME="#Blockchain name.Имя блокчейна.
-     - "PREFIX_CHAIN=dimokus" #Address prefix. Префикс адреса.
+     - "PREFIX_CHAIN=" #Address prefix. Префикс адреса.
     command:
       - "bash"
       - "-c"
     args:
-      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s  https://raw.githubusercontent.com/Dimokus88/universe/main/script/start.sh | bash ; sleep infinity'
+      - 'apt-get update ; apt-get upgrade -y ; apt-get install -y  curl ; curl -s  https://raw.githubusercontent.com/Dimokus88/Ignite/main/main.sh | bash ; sleep infinity'
     expose:
       - port: 80
         as: 80
