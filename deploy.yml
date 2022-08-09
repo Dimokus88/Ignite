@@ -7,7 +7,7 @@ services:
     env:
      - "my_root_password=" #Root password for ssh connection.Пароль root для подключения по ssh.
      - "ignite=v0.23.0" #Ignite version. Версия ignite
-     - "YOUR_CHAIN_NAME="#Blockchain name.Имя блокчейна.
+     - "YOUR_CHAIN_NAME=" #Blockchain name.Имя блокчейна.
      - "PREFIX_CHAIN=" #Address prefix. Префикс адреса.
     command:
       - "bash"
