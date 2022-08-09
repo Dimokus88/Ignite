@@ -16,6 +16,6 @@ cd /
 git clone https://github.com/ignite/cli
 cd cli && checout $ignite
 make install
-ignite scaffold $YOUR_CHAIN_NAME
+ignite scaffold chain $YOUR_CHAIN_NAME
 cd $YOUR_CHAIN_NAME
 ignite chain serve
