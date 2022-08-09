@@ -12,7 +12,7 @@ source $HOME/.bash_profile && \
 go version
 sed -i.bak -e "s~"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"~"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/local/go/bin:$HOME/go/bin"~;" /etc/sudoers
 mkdir -p /root/go/bin/
-
+cd /
 git clone https://github.com/ignite/cli
 cd cli && checout $ignite
 make install
