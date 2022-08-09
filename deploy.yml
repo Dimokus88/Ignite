@@ -6,9 +6,9 @@ services:
     image: ubuntu:latest
     env:
      - "my_root_password=" #Root password for ssh connection.Пароль root для подключения по ssh.
-     - "ignite=" #Ignite version. Версия ignite
+     - "ignite=v0.23.0" #Ignite version. Версия ignite
      - "YOUR_CHAIN_NAME="#Blockchain name.Имя блокчейна.
-    
+     - "PREFIX_CHAIN=dimokus" #Address prefix. Префикс адреса.
     command:
       - "bash"
       - "-c"
